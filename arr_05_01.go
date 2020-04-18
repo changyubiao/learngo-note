@@ -24,16 +24,17 @@ func main_02() {
 	fmt.Printf(" len(a) = %d, len(b)= %d", len(a), len(b))
 }
 
-func main_03() {
+func main() {
 
-	arr := [5]int{1, 2, 4, 5, 6}
+	arr := [5]int{10, 20, 40, 50, 60}
+	fmt.Printf("len(arr) = %d \n", len(arr))
 
 	for i, value := range arr {
 		fmt.Println(i, value)
 	}
 }
 
-func main() {
+func _main() {
 	var a = [4][2]int{{0, 0}, {1, 1}, {2, 2}, {3, 3}}
 
 	fmt.Println("a=", a)
