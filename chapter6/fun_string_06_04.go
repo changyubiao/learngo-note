@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"unicode"
 )
 
 /*
@@ -32,23 +33,43 @@ import (
 
 ToTitle   vs.  Title 的区别
 
+
+
+参考链接
+	https://docs.studygolang.com/pkg/strings/#ToLowerSpecial
+
 */
 
 func main() {
 
-	var name = "frank is a GOOD student"
+	//var name = "frank is a GOOD student"
 
 	//fmt.Println(name)
 
-	fmt.Println(strings.ToLower(name))
-	fmt.Println(strings.ToUpper(name))
-
-	fmt.Println("name=", name)
-
-	fmt.Println(strings.ToTitle(name))
-	fmt.Println(strings.Title("her royal highness"))
-
-	fmt.Println(strings.ToTitle(name) == strings.ToUpper(name))
+	//fmt.Println(strings.ToLower(name))
+	//fmt.Println(strings.ToUpper(name))
+	//
+	//fmt.Println("name=", name)
+	//
+	//fmt.Println(strings.ToTitle(name))
+	//fmt.Println(strings.Title("her royal highness"))
+	//
+	//fmt.Println(strings.ToTitle(name) == strings.ToUpper(name))
 
 	//strings.ToLowerSpecial()
+	fmt.Println("====ToLowerSpecial  testing=====")
+	TestToLowerSpecial()
+
+	TestToTitleSpecial()
+
+}
+
+func TestToLowerSpecial() {
+
+	//fmt.Print("hello  ToLowerSpecial")
+	fmt.Println(strings.ToLowerSpecial(unicode.TurkishCase, "Önnek İş"))
+}
+
+func TestToTitleSpecial() {
+	fmt.Println(strings.ToTitleSpecial(unicode.TurkishCase, "dünyanın ilk borsa yapısı Aizonai kabul edilir"))
 }
