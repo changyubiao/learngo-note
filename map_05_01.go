@@ -14,6 +14,10 @@ key 的数据类型 必须是 可以参与比较运算的类型，也是就是 �
 
 	像   slice  func   等引用类型 是不能作为key 的，因为他们 不可比较，或者说 不可哈希
 
+	map中key可以是：int、float、bool、string、数组
+	一定不可以是：切片、函数、map
+
+
 */
 func main01() {
 	// 定义一个 一个map     map[key_type]value_type
@@ -46,7 +50,7 @@ func main_02() {
 
 	fmt.Println(rates)
 
-	// 3.   先 创建，后赋值
+	// 3.   先 声明map，后赋值
 	countryMap := make(map[string]string)
 
 	countryMap["China"] = "Beijing"

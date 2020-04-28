@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -31,7 +32,7 @@ func main_01() {
 
 }
 
-func main() {
+func main02() {
 
 	nodeOnlinePrefix := "/nodesli"
 	kvs := []string{
@@ -58,4 +59,22 @@ func main() {
 
 		这是cutset中只有一个字符的情况, 如果集合中有多个字符,那么就从里面开始匹配, 什么时候找不到了, 就返回.
 	*/
+}
+
+func main() {
+	for i := 1; i <= 5; i++ {
+		//int转换为字符串：Itoa()
+		fmt.Println("I like you very much " + strconv.Itoa(i))
+
+	}
+
+	//number, _ := strconv.Atoi("123")
+	//
+	//fmt.Printf("%T, number=%d\n", number, number)
+
+	var i = 97
+	fmt.Println("I like you very much " + string(i))
+	fmt.Println("I like you very much " + strconv.Itoa(i))
+
+	//fmt.Println(strconv.Atoi("123"))
 }

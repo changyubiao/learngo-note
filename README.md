@@ -5,10 +5,11 @@
 
 
 ## 常用类库链接 
-[strings](https://docs.studygolang.com/pkg/strings/)
+- [strings](https://docs.studygolang.com/pkg/strings/)
+- [strconv](https://docs.studygolang.com/pkg/strconv/)
+- [time](https://docs.studygolang.com/pkg/time/)
 
 
-
-# 参考链接
+## 参考链接
 [pkg documentation](https://docs.studygolang.com/pkg/)
 
