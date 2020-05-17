@@ -29,9 +29,7 @@ FormatFloat 根据格式 fmt 和 precision prec 将浮点数f转换为字符串�
 格式 fmt 是 'b'，'e'，'E'，'f'，'g'或 'G'。
 
 5、func FormatBool(b bool) string
-FormatBool 根据 b 的值返回“true”或“false”
-
-
+FormatBool 根据 b 的值返回"true"或"false"
 
 
 */
@@ -43,7 +41,8 @@ func main() {
 	//TestFormatInt()
 	//TestFormatUint()
 
-	TestFormatBool()
+	//TestFormatBool()
+	TestItoa()
 }
 
 func TestFormatBool() {
